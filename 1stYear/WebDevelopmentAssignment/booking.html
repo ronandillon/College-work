@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="css.css" />
+<title> A Dog's Life </title>
+
+</head>
+
+<body background= "background.jpg">
+<div  id="header" >
+<img id="Picture" src="library.jpg"style="position:absolute; width:1000px; height:150px; margin-left:150px; background-color:red; border-radius:20px">
+<br><br><br><br><br><br></br></br>
+<center><table border="0">
+  <tr>
+    <th><a style="text-decoration:none;" href = "Home.html"> <h2 style="width:200px;color:white;background-color:red; border-radius:20px"><center>Home</center></h2></a></p>
+    <th><a style="text-decoration:none;" href = "prices.html"> <h2 style="width:200px;color:white;background-color:red; border-radius:20px"><center>Prices</center></h2></a></p></th>
+	<th><a style="text-decoration:none;" href = "Location.html"> <h2 style="width:200px;color:white;background-color:red; border-radius:20px"><center>Location</center></h2></a></p></th>
+	<th><a style="text-decoration:none;" href = "booking.html"> <h2 style="width:200px;color:white;background-color:black;border-radius:20px"><center>Booking</center></h2></a></p></th>
+	<th><a style="text-decoration:none;" href = "dogsitting.html"> <h2 style="width:200px;color:white;background-color:red;border-radius:20px"><center>Training/Sitting</center></h2></a></p></th>
+	<th><a style="text-decoration:none;" href = "http://www.facebook.com/adogslife.ie?fref=ts"> <h2 style="width:200px;color:white;background-color:red;border-radius:20px"><center>Facebook</center></h2></a></p></th>
+  </tr>
+</table></center>
+<div width="100" border="1" style="position:abosolute; left:50%;top:90%;margin-left:-250px;margin-top:-500px">
+</div>
+
+<div id="main_content" style="position:absolute; top:300px; left:227px;border-radius:10px; width:700px; background-color:white; margin-left:100px; border-radius:20px; padding:5px">
+<form action="hotmail.com" method="get">
+<table colspan="400px"" border="1">
+  <tr> 
+	<th style="width:250px">Description</th>
+    <th style="width:250px">Field</th>
+  </tr>
+  <tr>
+    <td>Enter your name:</td>
+    <td><input name="firstName" size="10" /></br></td>
+  </tr>
+  <tr>
+    <td>Enter A Description of your dog:</td>
+    <td><textarea name="myTextArea" rows="7" cols="35" wrap="soft">
+Please input a few lines about your dog. Any additional lines beyond the first seven are ignored by our database. Thank you for your cooperation!
+</textarea><p></p></br></td>
+  </tr>
+  <tr>
+    <td>What service would you like us to provide to you:</td>
+    <td colspan="4"><input type="checkbox" >Dog Sitting</br><input type="checkbox"> Grooming</br><input type="checkbox">Dog Training</br>
+  </tr>
+  <tr>
+    <td>What day would suit you most:</td>
+    <td><select>
+  <option value="Monday">Monday</option>
+  <option value="Tuesday">Tuesday</option>
+  <option value="Wednesday">Wednesday</option>
+  <option value="Thursday">Thursday</option>
+  <option value="Friday">Friday</option>
+  <option value="Saturday">Saturday</option>
+  </select></td>
+  </tr>
+
+</table>
+<input type="submit"  name="submitButton" onclick= "myfunction()" value="Send It" />
+<input type="reset"  name="resetButton" value="Clear It" />
+</div>
+</form>
+
+
+
+
+</div>
+<script>
+function myfunction()
+{
+alert("Thank you. Your feedback is greatly apreciated");
+}
+</script>
+</body>
+</html>
+

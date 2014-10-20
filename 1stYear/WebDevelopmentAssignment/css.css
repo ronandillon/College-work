@@ -1,0 +1,26 @@
+<!Doctype html>
+<html>
+<head>
+<style>
+:p
+{
+	color:red;
+}
+#main_content
+{
+	border-radius:15px;
+	box-shadow:0px 0px 0px 5px black;
+}
+#Picture
+{
+	border-radius:15px;
+	box-shadow:0px 0px 0px 5px black;
+}
+#table
+{
+	border-radius:15px;
+	box-shadow:0px 0px 0px 10px red;
+}
+</style>
+</head>
+</html>
