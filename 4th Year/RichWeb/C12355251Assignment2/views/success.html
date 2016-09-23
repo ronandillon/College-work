@@ -1,0 +1,74 @@
+<div class="col-sm-8 col-md-8 col-lg-8 col-xs-12 ">
+<div class="card meetings cf">
+  
+  
+  <div id="blog"></div>
+  <div id="list"></div>
+  <div id="title_list"></div>
+  <div id="post_list"></div>
+  
+  
+  <form id="submitblog" name="blogform"
+    ng-submit="blogpost()"
+    novalidate>
+    <h2>Create A Blog Entry</h2>
+ 
+  <fieldset>
+      <input id="title" type="text" name="title" placeholder="Title"
+      ng-model="blog.title" ng-required="true">
+
+
+      <input id="blogpost" type="text" name="blogpost" rows="10" cols ="50" placeholder="Enter blog in here..."
+      ng-model="blog.blogpost" ng-required="true">
+
+  </fieldset>
+  
+  <button  type="submit" class="btn">Submit Post</button>
+  </form>
+  
+  <br></br>
+  
+  <div class="panel panel-default" ng-repeat="post in data.posts">
+  <div class="panel-heading" >
+  <h1 class="panel-title">{{post.title}}</h1>
+  </div>
+  <div class="panel-body">
+  
+  {{post.blogpost}}
+  <br></br>
+  <div class="panel panel-default">
+  
+  <h2>Comments</h2>
+  <div class="" ng-repeat="comm in data2.comments">
+  <div class="panel" ng-repeat="c in comm" ng-hide="comm.$id!=post.$id" >
+	
+  <p ng-repeat="u in data3.users" ng-hide="u.$id!=c.regUser" >
+		{{u.firstname}} {{u.lastname}} :  {{c.comment}}
+  </p></div></div></div>
+  
+  
+  <div><form name="myform" ng-submit="comment(post.$id)" novalidate>
+  	<fieldset>
+  		<input type="text" ng-model="comment.message" class="form-control" id="t{{post.$id}}" placeholder="Reply to comment" ng-required="true">
+	 </fieldset>
+	<button  type="submit" class="btn">Submit</button>
+  </form></div>
+  </div></div>
+  
+
+  
+  
+  <br></br>
+  
+  </div></div>
+<!-- meetings cf -->
+<div class="col-sm-4 col-md-4 col-lg-4 col-xs-12 ">
+
+
+<div class="card meetings cf">
+<h2>Bloggington Feed</h2>
+<div ng-repeat="f in data4.posts"  class="card meetings cf">
+<button ng-repeat="u in data3.users"  ng-hide="u.$id!=f.$id" ng-click="profile(f.$id)" ><p>{{u.firstname}} has added a new blog </p></button>
+</div>
+</div>
+</div>

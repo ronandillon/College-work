@@ -1,0 +1,32 @@
+parent_of(Paul,Lili).
+parent_of(Paul,Pertunia).
+parent_of(Albert,James).
+parent_of(Vernon,Dudley).
+parent_of(James,Harry).
+parent_of(Helen,Lili).
+parent_of(Helen,Pertunia).
+parent_of(Ruth,James).
+parent_of(Pertunia,Dudley).
+parent_of(Lili,Harry).
+
+male(Paul).
+male(Vernon).
+male(James).
+male(Albert).
+male(Harry).
+male(Dudley).
+
+female(Helen).
+female(Ruth).
+female(Pertunia).
+female(Lili).
+
+father_of(X,Y) :- male(X), parent_of(X,Y).
+mother_of(X,Y) :- female(X), parent_of(X,Y).
+grandfather_of(X,Y) :- father_of(X,Z),parent_of(Z,Y).
+grandmother_of(X,Y) :- mother_of(X,Z),parent_of(Z,Y).
+
+sister_of(X,Y) :- female(X),female(Y),parent_of(Z,X),parent_of(Z,Y).
+
+aunt_of(X,Y) :- sister_of(X,Z),parent_of(Z,Y).
+uncle_of(X,Y) :- brother_of(X,Z),parent_of(Z,Y).

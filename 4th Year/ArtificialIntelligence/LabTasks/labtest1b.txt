@@ -1,0 +1,6 @@
+isTaller(X,Y) :- X>Y.
+
+Taller(X,Y,X) :- X>Y.
+Taller(X,Y,Y) :- Y>=X.
+
+Taller(X,Y,Z,W) :- max_of_two(X,Y,G),max_of_two(Z,G,K),W is K.

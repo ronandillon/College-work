@@ -1,0 +1,7 @@
+<div class="branding"><a ng-click="profile('Bloggington')" ng-href="#/success">Bloggington</a></div>
+  <ul>
+    <li id="item1"><a ng-href="#/login">Login</a></li>
+    <li id="item2"><a ng-href="#/register">Register</a></li>
+    <li id="item3" style="display:none"><div class="userinfo"  ng-controller="RegistrationController">
+	<a ng-hide="currentUser" ng-href="#/login" ng-click="logout()" >Logout</a></div></li>
+</ul>

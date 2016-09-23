@@ -1,0 +1,9 @@
+,FEATURENAME,Count,Miss,Card.,Mode,Mode Freq.,Mode %,2nd Mode,2nd Mode Frequency,2nd Mode%
+workclass,workclass,29205,5.940763567882212,9, Private,21576,73.87776065742167, Private,,
+education,education,30940,0.0,16, HS-grad,9976,32.24305106658048, HS-grad,,
+marital-status,marital-status,30940,0.0,7, Married-civ-spouse,14201,45.898513251454425, Married-civ-spouse,,
+occupation,occupation,29198,5.966162065894924,15, Prof-specialty,3932,13.46667579971231, Prof-specialty,,
+relationship,relationship,30940,0.0,6, Husband,12496,40.387847446670975, Husband,,
+race,race,30940,0.0,5, White,26442,85.46218487394958, White,,
+sex,sex,30940,0.0,2, Male,20705,66.91984486102133, Male,,
+native-country,native-country,30386,1.8232080563417363,42, United-States,27719,91.22293161324293, United-States,,
