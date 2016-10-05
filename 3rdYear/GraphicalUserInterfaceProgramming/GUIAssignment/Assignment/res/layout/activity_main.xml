@@ -1,0 +1,116 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+ 
+         <TextView
+             android:layout_width="fill_parent"
+		     android:layout_height="wrap_content"
+		     android:text="@string/name"
+		      />
+         <EditText
+             android:id="@+id/enter_name"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:ems="10"
+		     android:inputType="text" 
+		     />
+
+         <TextView
+             android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/age"
+		     />
+         
+         <EditText
+             android:id="@+id/enter_age"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:ems="10"
+		     android:inputType="number" 
+		     />
+
+         <TextView
+             android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/money"
+		      />
+         
+         <EditText
+             android:id="@+id/enter_money"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:ems="10"
+		     android:inputType="number" 
+		     />
+    
+         <TextView
+             android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/email"
+		     />
+         <EditText
+             android:id="@+id/enter_email"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:ems="10"
+		     android:inputType="textEmailAddress" />
+
+         <TextView
+             android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:text="@string/job"
+		     />
+         <Spinner
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:entries="@array/job_array"
+		     android:prompt="@string/job"
+		    />
+
+        
+	    <TextView
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       
+	       android:text="@string/sex"
+	        />
+	    
+	    <RadioGroup
+	        android:id="@+id/enter_sex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        
+	         >
+ 
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/male"/>
+ 
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/female"/>
+ 
+    </RadioGroup>
+
+     <Button
+       android:id="@+id/button1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="@string/submit" />
+
+
+</LinearLayout>
+</ScrollView>
+

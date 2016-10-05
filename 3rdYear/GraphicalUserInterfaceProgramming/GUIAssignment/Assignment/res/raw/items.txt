@@ -1,0 +1,1 @@
+fruit apple 0.90,fruit banana 0.60,vegetable carrot 0.40,sweet haribo 1.00

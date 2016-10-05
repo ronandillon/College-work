@@ -1,0 +1,2 @@
+serviceClass: ie.dit.dillon.ronan.client.GreetingService
+path: B15BE79847C3DDF9EFE100E7D1DD90CA.gwt.rpc

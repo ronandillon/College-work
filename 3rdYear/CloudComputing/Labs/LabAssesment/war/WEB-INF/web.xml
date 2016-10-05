@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>LabAssesment</servlet-name>
+		<servlet-class>ie.dit.dillon.ronan.LabAssesmentServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LabAssesment</servlet-name>
+		<url-pattern>/labassesment</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Multiplication</servlet-name>
+		<servlet-class>ie.dit.dillon.ronan.Multiplication</servlet-class>
+		
+		//Assigns default Parameters 
+		<init-param>
+ 			<param-name>A</param-name>
+ 			<param-value>5</param-value>
+ 		</init-param>
+ 		<init-param>
+ 			<param-name>B</param-name>
+ 			<param-value>2</param-value>
+		</init-param>
+		<init-param>
+ 			<param-name>C</param-name>
+ 			<param-value>6</param-value>
+ 		</init-param>
+ 		<init-param>
+ 			<param-name>D</param-name>
+ 			<param-value>3</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Multiplication</servlet-name>
+		<url-pattern>/Multiplication</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<security-constraint>
+		<web-resource-collection>
+			<url-pattern>/multiplication</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+</web-app>

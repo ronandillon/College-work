@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="5"
+    android:background="#FFFFFF">
+    
+	
+	 
+	 <TextView
+		 android:id="@+id/listofitems"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_weight="1" />
+	 
+	 <LinearLayout
+	     android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+	     android:layout_weight="3"
+	     android:layout_gravity="center">
+	 
+	 <Button
+       android:id="@+id/minus"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="#FFFFFF"
+        android:layout_gravity="center"
+       android:text="@string/minus" />
+	 
+	 <TextView
+		 android:id="@+id/listofquantities"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_gravity="center"/>
+	 
+	 <Button
+       android:id="@+id/plus"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       android:background="#FFFFFF"
+       android:text="@string/plus" />
+	 
+	 </LinearLayout>
+	 
+	 <TextView
+		 android:id="@+id/listofprices"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_weight="1"/>
+	 
+	 
+	 
+</LinearLayout>

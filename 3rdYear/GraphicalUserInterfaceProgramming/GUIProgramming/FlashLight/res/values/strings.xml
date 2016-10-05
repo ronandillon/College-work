@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FlashLight</string>
+    <string name="action_settings">Settings</string>
+    <string name="red_title">red</string>
+    <string name="green_title">green</string>
+
+</resources>

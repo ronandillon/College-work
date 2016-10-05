@@ -1,0 +1,48 @@
+Table
+Matches
+
+match_num
+p1_name
+p1_seed
+p2_name
+p2_seed
+match_date
+match_result
+								6-4/6-3/4-6/6-2/--
+Table
+tournament
+
+arrangement
+t_name
+seeded_tourn (bool)
+num_players
+
+Table
+players
+
+playerid
+name
+seed
+renewal_date
+gender
+start_date
+
+Table
+arrangement
+
+arrangement
+num_sets 		//in doc say we did this so that if the rules of tennis tournaments change 
+				//eg if mens singles changes to 6 sets its easier to change than anything else
+
+				
+Table 
+Enters
+
+player_id
+t_name		
+				
+relationships.
+
+tournament - matches 1..*
+arrangement - tournament 1..*   - arrangements can be in many tournaments but a tournament may only have 1 arrangement
+tournament - players *..* - a player may enter many tournaments and a tournament has many players 
